@@ -2,182 +2,173 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PROTIK DAS UTSO</title>
     <style>
-        body {
+        * {
             box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+            padding: 40px;
         }
 
         .container {
-            max-width: 800px;
+            max-width: 850px;
             margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
         }
 
         header {
             display: flex;
-            flex-direction: row;
             justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
         }
 
         .personal-info {
-            width: 650px;
+            max-width: 600px;
         }
 
         .name {
-            width: fit-content;
-            margin: 0 auto;
-            text-align: left;
-            gap: 25px;
+            font-size: 28px;
+            font-weight: bold;
+            color: #005a8d;
+            margin-bottom: 10px;
         }
 
-        .name p {
-            margin: 0;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 30px;
+        .personal-info p {
+            margin: 5px 0;
         }
 
         .line {
-            background-color: gray;
-            height: 4px;
-            width: 95%;
+            height: 2px;
+            background-color: #ccc;
+            margin-top: 10px;
+            margin-bottom: 20px;
         }
 
         .profile-img {
-            width: 150px;
-            height: auto;
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #005a8d;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        section h2 {
+            color: #005a8d;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
         }
 
         .pro-title {
             font-style: italic;
+            font-weight: 600;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        a {
+            color: #007acc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .contest-list {
+            margin-left: 20px;
         }
 
         .contest-list li {
-            font-style: italic;
-            font-weight: 800;
+            margin-bottom: 10px;
+            font-weight: bold;
         }
 
         .contest-list li p {
-            margin-left: -40px;
-            font-style: normal;
-            font-weight: 500;
+            font-weight: normal;
+            margin: 5px 0 0 0;
         }
     </style>
-
 </head>
 
 <body>
     <div class="container">
         <header>
-            <!-- Personal INFO -->
             <div class="personal-info">
-                <div class="name">
-                    <p>PROTIK DAS</p>
-                    <p>UTSO</p>
-                </div>
-                <p>01883044415</p>
-                <p>protikdas018830@gmail.com</p>
+                <div class="name">PROTIK DAS UTSO</div>
+                <p>Phone: 01883044415</p>
+                <p>Email: protikdas018830@gmail.com</p>
                 <div class="line"></div>
             </div>
-
-            <!-- IMAGE -->
             <div>
-                <img src="./profile.jpg" alt="protik" class="profile-img">
+                <img src="./img/profile.jpg" alt="Protik" class="profile-img" />
             </div>
         </header>
-        <section>
-            <!-- Education -->
-            <div class="education">
-                <h2>Education</h2>
-                <p>CGPA (SPRING 2025): 3.95</p>
-            </div>
-            <!-- Course -->
-            <div class="course">
-                <h2>Courses: </h2>
-                <p>I haven't had formal training in Java, Spring Boot, Thymeleaf, or Angular, except for an OOP course
-                    (CSE221-222)
-                    where we used Java. But I have some experience with other languages and frameworks like Python
-                    (django)
-                    &
-                    Wordpress.
-                </p>
-            </div>
-            <!-- Project -->
-            <div class="project">
-                <h2>Projects: </h2>
-                <!-- Github -->
-                <div class="github-finder">
-                    <h3 class="pro-title">Github Finder</h3>
-                    <p>The GitHub User Finder is a web application that allows users to search for GitHub profiles by
-                        username.
-                        It
-                        fetches
-                        and displays relevant user information such as repositories, followers, and activity, helping
-                        users
-                        easily
-                        find
-                        and
-                        explore GitHub profiles</p>
-                    <p><strong>Repo:</strong> <a href="https://github.com/protik-das-utso/github_user_finder"
-                            target="_blank">https://github.com/protik-das-utso/github_user_finder</a>
-                    <p><strong>Link:</strong> <a href="hƩps://protik-das-utso.github.io/github_user_finder/
-        " target="_blank">https://protik-das-utso.github.io/github_user_finder/
-                        </a>
-                    </p>
-                </div>
-                <!-- Cover Builder -->
-                <div class="cover builder">
-                    <h3 class="pro-title">DIU Cover Page Builder</h3>
-                    <p>The DIU Cover Page Builder is a web application that allows users to easily create customizable
-                        cover
-                        pages for
-                        academic submissions at Daffodil International University (DIU). It provides a user-friendly
-                        interface to input
-                        necessary details and generate a professional-looking cover page.
-                    </p>
-                    <p><strong>Repo:</strong> <a href=" https://github.com/protik-das-utso/diu-cover-page-builder"
-                            target="_blank">https://github.com/protik-das-utso/diu-cover-page-builder</a>
-                    <p><strong>Link:</strong> <a href="https://protik-das-utso.github.io/diu-cover-page-builder/
-        " target="_blank">https://protik-das-utso.github.io/diu-cover-page-builder/
 
-                        </a>
-                    </p>
-                </div>
+        <section class="education">
+            <h2>Education</h2>
+            <p><strong>CGPA (Spring 2025):</strong> 3.95</p>
+        </section>
+
+        <section class="course">
+            <h2>Courses</h2>
+            <p>I haven't had formal training in Java, Spring Boot, Thymeleaf, or Angular, except for an OOP course (CSE221-222)
+                where we used Java. But I have some experience with Python (Django) and WordPress.</p>
+        </section>
+
+        <section class="project">
+            <h2>Projects</h2>
+
+            <div>
+                <h3 class="pro-title">GitHub User Finder</h3>
+                <p>A web app to search GitHub profiles by username, showing repos, followers, and activity.</p>
+                <p><strong>Repo:</strong> <a href="https://github.com/protik-das-utso/github_user_finder" target="_blank">github.com/protik-das-utso/github_user_finder</a></p>
+                <p><strong>Live:</strong> <a href="https://protik-das-utso.github.io/github_user_finder/" target="_blank">protik-das-utso.github.io/github_user_finder</a></p>
             </div>
-            <!-- Goal -->
-            <div class="goal">
-                <h2>Goals: </h2>
-                <p>My goal for the next 3–6 months is to improve my full-stack development skills, focusing on both
-                    backend
-                    and
-                    frontend technologies. I plan to master Java, Spring Boot, Thymeleaf, Angular, and React.js, as well
-                    as
-                    work with
-                    databases like MySQL, PostgreSQL, and Oracle. I aim to apply this knowledge to build real-world
-                    projects.
-                </p>
+
+            <div>
+                <h3 class="pro-title">DIU Cover Page Builder</h3>
+                <p>A tool to create academic cover pages for DIU, with a simple UI and customization features.</p>
+                <p><strong>Repo:</strong> <a href="https://github.com/protik-das-utso/diu-cover-page-builder" target="_blank">github.com/protik-das-utso/diu-cover-page-builder</a></p>
+                <p><strong>Live:</strong> <a href="https://protik-das-utso.github.io/diu-cover-page-builder/" target="_blank">protik-das-utso.github.io/diu-cover-page-builder</a></p>
             </div>
-            <!-- Contest & Certificates -->
-            <div class="contest">
-                <h2>Contest & Certificates: </h2>
-                <ol class="contest-list">
-                    <li>CSS (Basic) Certificate – Hacker rank<br>
-                        <p>Link: <a href="https://www.hackerrank.com/certificates/e72e622ed2d1"
-                                target="_blank">https://www.hackerrank.com/certificates/e72e622ed2d1</a> </p>
-                    </li>
-                    <li>Master HTML and CSS by building real-world projects - Udemy<br>
-                        <p>Link: <a href="https://www.udemy.com/certificate/UC-f2304903-4293-411c-90a9-1d9801a7e3cc/"
-                                target="_blank">https://www.udemy.com/certificate/UC-f2304903-4293-411c-90a9-1d9801a7e3cc/</a>
-                        </p>
-                    </li>
-                    <li>Master Git and GitHub - Beginner to Expert - Udemy<br>
-                        <p>Link: <a href="https://www.udemy.com/certificate/UC-cc7dea89-4c4b-4f13-a6fc-729950ca68f5/"
-                                target="_blank">https://www.udemy.com/certificate/UC-cc7dea89-4c4b-4f13-a6fc-729950ca68f5/</a>
-                        </p>
-                    </li>
-                </ol>
-            </div>
+        </section>
+
+        <section class="goal">
+            <h2>Goals</h2>
+            <p>My goal for the next 3–6 months is to improve my full-stack development skills. I plan to master Java, Spring Boot, Thymeleaf, Angular, React.js, and databases like MySQL, PostgreSQL, and Oracle by working on real-world projects.</p>
+        </section>
+
+        <section class="contest">
+            <h2>Contests & Certificates</h2>
+            <ol class="contest-list">
+                <li>CSS (Basic) Certificate – HackerRank
+                    <p>Link: <a href="https://www.hackerrank.com/certificates/e72e622ed2d1" target="_blank">hackerrank.com/certificates/e72e622ed2d1</a></p>
+                </li>
+                <li>Master HTML and CSS by Building Real-World Projects – Udemy
+                    <p>Link: <a href="https://www.udemy.com/certificate/UC-f2304903-4293-411c-90a9-1d9801a7e3cc/" target="_blank">udemy.com/certificate/UC-f2304903-4293-411c-90a9-1d9801a7e3cc</a></p>
+                </li>
+                <li>Master Git and GitHub – Beginner to Expert – Udemy
+                    <p>Link: <a href="https://www.udemy.com/certificate/UC-cc7dea89-4c4b-4f13-a6fc-729950ca68f5/" target="_blank">udemy.com/certificate/UC-cc7dea89-4c4b-4f13-a6fc-729950ca68f5</a></p>
+                </li>
+            </ol>
         </section>
     </div>
 </body>
